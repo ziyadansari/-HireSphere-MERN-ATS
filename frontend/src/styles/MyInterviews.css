@@ -1,0 +1,229 @@
+
+.my-interviews-page {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #212121;
+}
+
+.my-interviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.my-interviews-header h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.my-interviews-header p {
+    color: #777;
+    margin: 0;
+}
+
+.interview-refresh-button,
+.interview-retry-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.interview-count {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.interviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.candidate-interview-card {
+    padding: 22px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.candidate-interview-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.interview-job-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef0ff;
+    color: #405cf5;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.interview-job-info {
+    flex: 1;
+}
+
+.interview-job-info h2 {
+    font-size: 19px;
+    margin: 0 0 6px;
+}
+
+.interview-job-info p {
+    color: #777;
+    margin: 0;
+}
+
+.interview-status {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    background: #fff4df;
+    color: #a56a00;
+}
+
+.status-completed {
+    background: #e6f7ed;
+    color: #16834b;
+}
+
+.status-cancelled {
+    background: #ffe8e8;
+    color: #c0392b;
+}
+
+.interview-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.interview-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    color: #687080;
+}
+
+.interview-detail div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.interview-detail span {
+    font-size: 12px;
+    color: #888;
+}
+
+.interview-detail strong {
+    font-size: 14px;
+    color: #333;
+    overflow-wrap: anywhere;
+}
+
+.interview-meeting-link {
+    margin-top: 22px;
+}
+
+.interview-meeting-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 7px;
+    background: #405cf5;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.interview-meeting-link a:hover {
+    background: #3049d0;
+}
+
+.interview-notes {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f7f8fc;
+    border-radius: 8px;
+}
+
+.interview-notes p {
+    margin: 7px 0 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.no-interviews {
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px dashed #ddd;
+    border-radius: 12px;
+    color: #888;
+}
+
+.no-interviews h2 {
+    color: #333;
+    margin: 15px 0 8px;
+}
+
+.interview-message {
+    text-align: center;
+    padding: 50px;
+}
+
+.interview-error {
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+
+.interview-retry-button {
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .interview-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .my-interviews-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .candidate-interview-top {
+        flex-wrap: wrap;
+    }
+
+    .interview-status {
+        margin-left: 65px;
+    }
+
+    .interview-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .candidate-interview-card {
+        padding: 16px;
+    }
+}
